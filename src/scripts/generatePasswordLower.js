@@ -3,7 +3,6 @@ export function generatePasswordLower() {
     let passResult = "";
     if (lowerCase.checked) {
         for (let i = 0; i <= longitud.value-1; i++) {
-            console.log(i);
             passResult += lowers[Math.floor(Math.random() * lowers.length)];
         }
         password.value = passResult;
